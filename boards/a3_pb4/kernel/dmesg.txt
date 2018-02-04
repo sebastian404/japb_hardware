@@ -1,0 +1,213 @@
+Booting Linux on physical CPU 0
+Initializing cgroup subsys cpuset
+Linux version 3.4.43 (root@xf-ubuntu) (gcc version 4.5.1 (ctng-1.8.1-FA) ) #357 PREEMPT Thu Sep 24 15:26:41 CST 2015
+CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Machine: sun5i
+Memory Reserved:
+	SYS  : 0x43000000 - 0x4300ffff  (  64 kB)
+	LCD  : 0x44000000 - 0x45ffffff  (  32 MB)
+Memory policy: ECC disabled, Data cache writeback
+chip-id: Unknown (AW1625)
+On node 0 totalpages: 65536
+free_area_init_node: node 0, pgdat c0690d60, node_mem_map c0741000
+  Normal zone: 512 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 65024 pages, LIFO batch:15
+pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+pcpu-alloc: [0] 0 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 65024
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait ro loglevel=8 panic=10
+PID hash table entries: 1024 (order: 0, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 256MB = 256MB total
+Memory: 219588k/219588k available, 42556k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xd0800000 - 0xff000000   ( 744 MB)
+    lowmem  : 0xc0000000 - 0xd0000000   ( 256 MB)
+    pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+    modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+      .text : 0xc0008000 - 0xc05c48d8   (5875 kB)
+      .init : 0xc05c5000 - 0xc065a000   ( 596 kB)
+      .data : 0xc065a000 - 0xc06974e8   ( 246 kB)
+       .bss : 0xc069750c - 0xc07401c8   ( 676 kB)
+SLUB: Genslabs=11, HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+NR_IRQS:128
+timer0: Periodic Mode
+sched_clock: 32 bits at 100 Hz, resolution 10000000ns, wraps every 4294967286ms
+Console: colour dummy device 80x30
+Calibrating delay loop... 1150.97 BogoMIPS (lpj=5754880)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+Initializing cgroup subsys cpuacct
+Initializing cgroup subsys devices
+Initializing cgroup subsys freezer
+Initializing cgroup subsys blkio
+CPU: Testing write buffer coherency: ok
+hw perfevents: enabled with ARMv7 Cortex-A8 PMU driver, 5 counters available
+Setting up static identity map for 0x403dc790 - 0x403dc7e8
+devtmpfs: initialized
+dummy: 
+NET: Registered protocol family 16
+hw-breakpoint: debug architecture 0x4 unsupported.
+Init eGon pin module V2.0
+SOFTWINNER DMA Driver, (c) 2003-2004,2006 Simtec Electronics
+Initialize DMAC OK
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+Advanced Linux Sound Architecture Driver Version 1.0.25.
+cfg80211: Calling CRDA to update world regulatory domain
+Switching to clocksource aw 64bits couter
+FS-Cache: Loaded
+CacheFiles: Loaded
+[usb_manager]: CONFIG_USB_SW_SUN5I_USB0_HOST_ONLY
+[sw_hcd0]: usb host driver initialize........
+[sw_hcd0]: [sw_hcd_host0]: open_usb_clock
+[hcd0]: open, 0x60(0xc141), 0xcc(0x143)
+[sw_hcd0]: host_init_state = 0
+[sw_hcd0]: platform is usb host
+[sw_hcd0]: sw_hcd_host0: ConfigData=0xde (UTMI-8, dyn FIFOs, bulk combine, bulk split, HB-ISO Rx (X), HB-ISO Tx (X), SoftConn)
+[sw_hcd0]: sw_hcd_init_controller: sw_hcd_host0: USB Host mode controller at f1c13000 using PIO, IRQ 38
+sw_hcd_host0 sw_hcd_host0: sw_hcd host driver
+sw_hcd_host0 sw_hcd_host0: new USB bus registered, assigned bus number 1
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+[sw_hcd_host0]: Set USB Power ON
+NET: Registered protocol family 1
+audit: initializing netlink socket (disabled)
+type=2000 audit(0.269:1): initialized
+VFS: Disk quotas dquot_6.5.2
+Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+NTFS driver 2.1.30 [Flags: R/W].
+fuse init (API version 7.18)
+msgmni has been set to 428
+alg: No test for stdrng (krng)
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+sunxi disp driver loaded (/dev/disp api 1.0)
+Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[uart]: failed to get uart0's used information
+[uart]: failed to get uart2's used information
+[uart]: used uart info.: 0x0a
+[uart]: serial probe 1 irq 2 mapbase 0x01c28400
+sunxi-uart.1: ttyS0 at MMIO 0x1c28400 (irq = 2) is a U6_16550A
+console [ttyS0] enabled
+[uart]: serial probe 3 irq 4 mapbase 0x01c28c00
+sunxi-uart.3: ttyS1 at MMIO 0x1c28c00 (irq = 4) is a U6_16550A
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+usbcore: registered new interface driver ums-alauda
+usbcore: registered new interface driver ums-cypress
+usbcore: registered new interface driver ums-datafab
+usbcore: registered new interface driver ums_eneub6250
+usbcore: registered new interface driver ums-freecom
+usbcore: registered new interface driver ums-isd200
+usbcore: registered new interface driver ums-jumpshot
+usbcore: registered new interface driver ums-karma
+usbcore: registered new interface driver ums-onetouch
+usbcore: registered new interface driver ums-realtek
+usbcore: registered new interface driver ums-sddr09
+usbcore: registered new interface driver ums-sddr55
+usbcore: registered new interface driver ums-usbat
+mousedev: PS/2 mouse device common for all mice
+input: sun4i-keyboard as /devices/virtual/input/input0
+===========================hv_keypad_init=====================
+========HV Inital ===================
+tkey_fetch_sysconfig_para: tkey_unused. 
+hv_keypad_init: after fetch_sysconfig_para:  normal_i2c: 0x0. normal_i2c[1]: 0x0 
+========RTC Inital ===================
+rtc_fetch_sysconfig_para: after: rtc_twi_addr is 0x51, dirty_addr_buf: 0x51. dirty_addr_buf[1]: 0xfffe 
+rtc_fetch_sysconfig_para: rtc_twi_id is 1. 
+rtc_fetch_sysconfig_para:ok
+pcf8563_init: after fetch_sysconfig_para:  normal_i2c: 0x51. normal_i2c[1]: 0xfffe 
+i2c /dev entries driver
+!!! base_Addr = 0xf1c2ac00 
+config i2c gpio with gpio_config api 
+twi0, apb clock = 24000000 
+i2c i2c-0: Invalid probe address 0x00
+rtc_detect,line:157,twi_id:1,adapter->nr:0
+rtc_detect,line:166
+I2C: i2c-0: AW16XX I2C adapter
+!!! base_Addr = 0xf1c2b000 
+twi1, apb clock = 24000000 
+i2c i2c-1: Invalid probe address 0x00
+rtc_detect,line:157,twi_id:1,adapter->nr:1
+rtc_detect: Detected chip pcf8563 at adapter 1, address 0x51
+rtc_detect,line:162
+pcf8563_probe,line:657
+pcf8563 1-0051: chip found, driver version 0.4.3
+START can't sendout!
+Retrying transmission 2
+START can't sendout!
+Retrying transmission 1
+START can't sendout!
+Retrying transmission 0
+pcf8563 1-0051: pcf8563_get_datetime: read error,ret:-121
+pcf8563 1-0051: rtc core: registered pcf8563 as rtc0
+I2C: i2c-1: AW16XX I2C adapter
+!!! base_Addr = 0xf1c2b400 
+twi2, apb clock = 24000000 
+i2c i2c-2: Invalid probe address 0x00
+rtc_detect,line:157,twi_id:1,adapter->nr:2
+rtc_detect,line:166
+I2C: i2c-2: AW16XX I2C adapter
+[mmc_pm]: no sdio card used in configuration
+[mmc]: sunximmc_init
+[mmc]: sunxi mmc controller using config : 0x1
+[mmc]: sunxi-mmc.0: pdev->name: sunxi-mmc, pdev->id: 0
+[mmc]: mmc 0 power off !!
+[mmc]: mmc0 Probe: base:0xf1c0f000 irq:32 dma:0 pdes:0xcf94c000, ret 0.
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+enter sun4i Audio codec!!!
+sun4i audio support initialized
+sun4i Audio codec successfully loaded..
+[SPDIF]sun4i-spdif cannot find any using configuration for controllers, return directly!
+[SPDIF]sndspdif cannot find any using configuration for controllers, return directly!
+[SPDIF]sun4i_sndspdif cannot find any using configuration for controllers, return directly!
+[I2S]sun4i-i2s cannot find any using configuration for controllers, return directly!
+[I2S]sndi2s cannot find any using configuration for controllers, return directly!
+[I2S]sun4i_sndi2s cannot find any using configuration for controllers, return directly!
+NET: Registered protocol family 17
+VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+Registering SWP/SWPB emulation handler
+registered taskstats version 1
+Console: switching to colour frame buffer device 100x37
+START can't sendout!
+Retrying transmission 2
+START can't sendout!
+Retrying transmission 1
+START can't sendout!
+Retrying transmission 0
+pcf8563 1-0051: pcf8563_get_datetime: read error,ret:-121
+pcf8563 1-0051: hctosys: unable to read the hardware clock
+ALSA device list:
+  #0: sun4i-CODEC  Audio Codec
+Waiting for root device /dev/mmcblk0p2...
+[mmc]: mmc 0 detect change, present 1
+[mmc]: mmc 0 power on !!
+[mmc]: sdxc_request_done(L1114): smc 0 err, cmd 52,  RTO !!
+[mmc]: sdxc_request_done(L1114): smc 0 err, cmd 52,  RTO !!
+[mmc]: sdxc_request_done(L1114): smc 0 err, cmd 5,  RTO !!
+[mmc]: sdxc_request_done(L1114): smc 0 err, cmd 5,  RTO !!
+[mmc]: sdxc_request_done(L1114): smc 0 err, cmd 5,  RTO !!
+[mmc]: sdxc_request_done(L1114): smc 0 err, cmd 5,  RTO !!
+mmc0: new high speed SDHC card at address 0001
+mmcblk0: mmc0:0001 00000 7.36 GiB 
+ mmcblk0: p1 p2
+EXT3-fs (mmcblk0p2): mounted filesystem with ordered data mode
+kjournald starting.  Commit interval 5 seconds
+VFS: Mounted root (ext3 filesystem) readonly on device 179:2.
+devtmpfs: mounted
+Freeing init memory: 596K
