@@ -1,0 +1,148 @@
+[    0.000000] Booting Linux on physical CPU 0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Linux version 3.4.103-00033-g9a1cd03-dirty (root@rocky) (gcc version 4.7.2 (Debian 4.7.2-5) ) #131 PREEMPT Mon Jun 8 14:18:20 HKT 2015
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: sun5i
+[    0.000000] mi->bank[0].start: 0x40000000, bank[0].size: 0x10000000
+[    0.000000] Memory Reserved:
+[    0.000000] 	SYS  : 0x43000000 - 0x4300ffff  (  64 kB)
+[    0.000000] 	LCD  : 0x43010000 - 0x433fffff  (   3 MB)
+[    0.000000] Memory Reserved: CONFIG_FB_SUNXI_RESERVED_MEM
+[    0.000000] arm_dma_limit: 0x4fffffff, arm_lowmem_limit: 0x50000000
+[    0.000000] dma_declare_contiguous(size c000000, base 00000000, limit 4fffffff)
+[    0.000000] cma: CMA: reserved 192 MiB at 43c00000
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] sunxi: Allwinner A13 (AW1625/sun5i) detected.
+[    0.000000] On node 0 totalpages: 65536
+[    0.000000] free_area_init_node: node 0, pgdat c06fc268, node_mem_map c0796000
+[    0.000000]   DMA zone: 512 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 65024 pages, LIFO batch:15
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 65024
+[    0.000000] Kernel command line: noinitrd root=/dev/mmcblk0p2 rootwait 
+[    0.000000] PID hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Memory: 256MB = 256MB total
+[    0.000000] Memory: 50992k/50992k available, 211152k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0xd0800000 - 0xff000000   ( 744 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xd0000000   ( 256 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc0493c40   (4656 kB)
+[    0.000000]       .init : 0xc0494000 - 0xc06bc000   (2208 kB)
+[    0.000000]       .data : 0xc06bc000 - 0xc06fd0e0   ( 261 kB)
+[    0.000000]        .bss : 0xc06fd104 - 0xc0795e98   ( 612 kB)
+[    0.000000] SLUB: Genslabs=11, HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] NR_IRQS:128
+[    0.000000] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [tty0] enabled
+[    0.000501] Calibrating delay loop... 1001.88 BogoMIPS (lpj=5009408)
+[    0.040000] pid_max: default: 32768 minimum: 301
+[    0.040126] Mount-cache hash table entries: 512
+[    0.040579] Initializing cgroup subsys cpuacct
+[    0.040609] Initializing cgroup subsys devices
+[    0.040632] Initializing cgroup subsys freezer
+[    0.040648] Initializing cgroup subsys blkio
+[    0.040700] CPU: Testing write buffer coherency: ok
+[    0.040893] hw perfevents: enabled with ARMv7 Cortex-A8 PMU driver, 5 counters available
+[    0.040983] Setting up static identity map for 0x403168e0 - 0x40316938
+[    0.041551] devtmpfs: initialized
+[    0.055793] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.056258] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.057081] Init eGon pin module V2.0
+[    0.057120] SOFTWINNER DMA Driver, (c) 2003-2004,2006 Simtec Electronics
+[    0.057230] Initialize DMAC OK
+[    0.058834] bio: create slab <bio-0> at 0
+[    0.059345] SCSI subsystem initialized
+[    0.059664] Advanced Linux Sound Architecture Driver Version 1.0.25.
+[    0.059727] Switching to clocksource aw_64bits_counter
+[    0.059868] FS-Cache: Loaded
+[    0.060073] CacheFiles: Loaded
+[    0.182737] VFS: Disk quotas dquot_6.5.2
+[    0.182927] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.184423] NTFS driver 2.1.30 [Flags: R/W].
+[    0.184651] fuse init (API version 7.18)
+[    0.185129] msgmni has been set to 483
+[    0.188700] alg: No test for stdrng (krng)
+[    0.188984] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    0.189020] io scheduler noop registered
+[    0.189036] io scheduler deadline registered
+[    0.189071] io scheduler cfq registered (default)
+[    0.189317] sunxi disp driver loaded (/dev/disp api 1.0)
+[    0.189483] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.190969] brd: module loaded
+[    0.192711] loop: module loaded
+[    0.192889] [spi]: sw spi init !!
+[    0.192919] [spi]: Found 1 spi devices in config files
+[    0.192940] [spi]: boards num modalias         max_spd_hz       bus_num  cs   mode
+[    0.192973] [spi]: board (spi_board0): 0
+[    0.192987] [spi]: spi_board0 irq gpio not used
+[    0.193004] [spi]: 0          spidev           12000000         2        0    0x3   
+[    0.193103] [spi]: bus num = 2, spi used = 1 
+[    0.193321] [spi]: source = sdram_pll_p, src_clk = 408000000, mclk 102000000
+[    0.193429] sun5i-spi sun5i-spi.2: master is unqueued, this is deprecated
+[    0.193604] [spi]: allwinners SoC SPI Driver loaded for Bus SPI-2 with 2 Slaves attached
+[    0.193637] [spi]: [spi-2]: driver probe succeed, base f1c17000, irq 12, dma_id 2!
+[    0.193809] mousedev: PS/2 mouse device common for all mice
+[    0.193908] ========RTC Inital ===================
+[    0.193937] rtc_fetch_sysconfig_para: rtc_unused. 
+[    0.193953] rtc_fetch_sysconfig_para:ok
+[    0.193969] pcf8563_init: after fetch_sysconfig_para:  normal_i2c: 0x0. normal_i2c[1]: 0x0 
+[    0.194025] i2c /dev entries driver
+[    0.194234] config i2c gpio with gpio_config api
+[    0.194441] i2c i2c-0: Invalid probe address 0x00
+[    0.194464] I2C: i2c-0: AW16XX I2C adapter
+[    0.194506] config i2c gpio with gpio_config api
+[    0.194681] i2c i2c-1: Invalid probe address 0x00
+[    0.194701] I2C: i2c-1: AW16XX I2C adapter
+[    0.194740] config i2c gpio with gpio_config api
+[    0.194890] i2c i2c-2: Invalid probe address 0x00
+[    0.194910] I2C: i2c-2: AW16XX I2C adapter
+[    0.194946] [pa_drv] start!!!
+[    0.195111] [pa_drv] init end!!!
+[    0.195129] md: linear personality registered for level -1
+[    0.195148] md: multipath personality registered for level -4
+[    0.195166] md: faulty personality registered for level -5
+[    0.195660] device-mapper: ioctl: 4.22.0-ioctl (2011-10-19) initialised: dm-devel@redhat.com
+[    0.195947] device-mapper: multipath: version 1.3.2 loaded
+[    0.195973] device-mapper: multipath round-robin: version 1.0.0 loaded
+[    0.195993] device-mapper: multipath queue-length: version 0.1.0 loaded
+[    0.196014] device-mapper: multipath service-time: version 0.2.0 loaded
+[    0.198049] [mmc_pm]: no sdio card used in configuration
+[    0.200505] [ccmu] set sdc0 reset status to 0 failed!
+[    0.200545] [mmc-err] Failed to release sdc0 reset
+[    0.201787] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.201840] Registering SWP/SWPB emulation handler
+[    0.310830] [mmc-err] smc 0 err, cmd 52,  RTO
+[    0.311688] [mmc-err] smc 0 err, cmd 52,  RTO
+[    0.316195] [mmc-err] smc 0 err, cmd 5,  RTO
+[    0.317025] [mmc-err] smc 0 err, cmd 5,  RTO
+[    0.317855] [mmc-err] smc 0 err, cmd 5,  RTO
+[    0.318682] [mmc-err] smc 0 err, cmd 5,  RTO
+[    0.460052] mmc0: new high speed SDHC card at address aaaa
+[    0.460356] mmcblk0: mmc0:aaaa SL16G 14.8 GiB 
+[    0.465578]  mmcblk0: p1 p2
+[    0.760743] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+[    0.760779] ALSA device list:
+[    0.760793]   #0: sunxi-CODEC  Audio Codec
+[    0.763453] Freeing init memory: 2208K
+[    0.854818] UMP: UMP device driver  loaded
+[    0.873021] Mali: permit MALI_IOC_MEM_MAP_EXT ioctl for framebuffer (paddr=0x43010000, size=4128768)
+[    0.873153] mali: use config clk_div 2
+[    0.873169] mali: clk_div 2
+[    0.873201] Mali: mali clock set completed, clock is  180000000 Hz
+[    0.876272] mali: use config clk_div 2
+[    0.876314] mali: clk_div 2
+[    0.876347] Mali: mali clock set completed, clock is  180000000 Hz
+[    0.881537] Mali: Mali device driver loaded
+[    0.894660] kjournald starting.  Commit interval 5 seconds
+[    0.912277] EXT3-fs (mmcblk0p2): using internal journal
+[    0.912301] EXT3-fs (mmcblk0p2): mounted filesystem with ordered data mode
